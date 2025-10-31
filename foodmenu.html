@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brün Haus - Food Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #8B4513;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .header-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: #8B4513;
+        }
+
+        .zom-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+        .menu-section {
+            margin-bottom: 40px;
+        }
+
+        .menu-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #8B4513;
+            border-bottom: 2px solid #8B4513;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            margin:10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 10px 16px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .menu-item-name {
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .menu-item-desc {
+            flex: 2;
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0 10px;
+        }
+
+        .menu-item-price {
+            font-weight: bold;
+            color: #8B4513;
+        }
+
+        .order-online {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 1.2rem;
+            color: #8B4513;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+            background-color: #f9f9f9;
+        }
+
+        .footer-qr {
+            margin: 20px auto;
+            max-width: 200px;
+        }
+
+        .footer-info {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #8B4513;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu-item-desc {
+                margin: 5px 0;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-info">
+                <span>CAFE</span>
+                <img src="assets/images/bhlogo2.png" alt="Brün Haus Logo" style="width: 130px; height: 130px;">
+                <span>EST. 2025</span>
+            </div>
+            <h1>BRÜN HAUS</h1>
+        </div>
+
+        <div class="order-online">
+            <p>Order Online on</p>
+            <div class="social-icons">
+                <a href="http://zoma.to/r/22232213"> <img src="assets/images/zomato.png" alt="Zomato" class="zom-icon"> </a> 
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Salads</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">CAESAR SALAD</div>
+                <div class="menu-item-price">₹289</div>
+            </div>
+        
+            <div class="menu-item">
+                <div class="menu-item-name">GREEK SALAD</div>
+                <div class="menu-item-price">₹269</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">VEG NUGGETS</div>
+                <div class="menu-item-price">₹139</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">ONION RINGS</div>
+                <div class="menu-item-price">₹119</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">MUSHROOM POPCORN</div>
+                <div class="menu-item-price">₹219</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">AMERICAN CRISPY CORN</div>
+                <div class="menu-item-price">₹169</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">SAUTE VEGGIES</div>
+                <div class="menu-item-price">₹229</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">LOADED NACHOS</div>
+                <div class="menu-item-price">₹139</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">CHEESE FRIES</div>
+                <div class="menu-item-price">₹159</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">PERI PERI FRIES</div>
+                <div class="menu-item-price">₹89</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">SALTED FRIES</div>
+                <div class="menu-item-price">₹89</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Sandwiches</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">PESTO COTTAGE CHEESE SANDWICH</div>
+                <div class="menu-item-price">₹239</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">CLASSIC CLUB SANDWICH</div>
+                <div class="menu-item-price">₹189</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">CHEESE CHILLI TOAST</div>
+                <div class="menu-item-price">₹109</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Burgers</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">GOLDEN BITE BURGER</div>
+                <div class="menu-item-price">₹129</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">GOLDEN BITE DOUBLE CHEESE BURGER</div>
+                <div class="menu-item-price">₹149</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">PERI PERI COTTAGE CHEESE BURGER</div>
+                <div class="menu-item-price">₹159</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">MUSHROOM CHEESE BURGER</div>
+                <div class="menu-item-price">₹169</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Garlic Breads</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">CLASSIC GARLIC BREAD</div>
+                <div class="menu-item-price">₹89</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">ITALIAN GARLIC BREAD (WITH CHEESE)</div>
+                <div class="menu-item-price">₹109</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">CHEESE GARLIC BREAD</div>
+                <div class="menu-item-price">₹109</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Pizzas</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">CLASSIC MARGHERITA</div>
+                <div class="menu-item-price">₹219</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">VERDURE PIZZA (VEGGIE)</div>
+                <div class="menu-item-price">₹269</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">PESTO DI FUNGHI</div>
+                <div class="menu-item-price">₹279</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">VEG MASCANA PIZZA</div>
+                <div class="menu-item-price">₹269</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">MUSHROOM BLACK OLIVE</div>
+                <div class="menu-item-price">₹259</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Pasta</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">ITALIAN ARRABBIATA PASTA</div>
+                <div class="menu-item-price">₹259</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">ITALIAN ALFREDO PASTA</div>
+                <div class="menu-item-price">₹259</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">MAMA ROSE PASTA (PINK SAUCE)</div>
+                <div class="menu-item-price">₹259</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">SPAGHETTI WITH SUNDRIED TOMATO</div>
+                <div class="menu-item-price">₹259</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">BIG MAC & CHEESE (BAKED)</div>
+                <div class="menu-item-price">₹269</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">PESTO PASTA (GREEN SAUCE)</div>
+                <div class="menu-item-price">₹289</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Chinese</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">KOREAN CHILLI PANEER</div>
+                <div class="menu-item-price">₹259</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">HONEY CHILLI POTATO</div>
+                <div class="menu-item-price">₹189</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">VEG MUNCHURIAN DRY</div>
+                <div class="menu-item-price">₹189</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">MANGOLIAN MUSHROOM CHILLI DRY</div>
+                <div class="menu-item-price">₹239</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">VEG FRIED RICE</div>
+                <div class="menu-item-price">₹159</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">HAKKA NOODLES</div>
+                <div class="menu-item-price">₹189</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">CHILLI GARLIC NOODLES</div>
+                <div class="menu-item-price">₹209</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">SPRING ROLLS</div>
+                <div class="menu-item-price">₹109</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">VEG DIMSUMS</div>
+                <div class="menu-item-price">₹209</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">CHILLI VEGETABLES</div>
+                <div class="menu-item-price">₹209</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Maggie Mania</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">VEGGIE MASALA MAGGI</div>
+                <div class="menu-item-price">₹119</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">CHEESEY MAGGI</div>
+                <div class="menu-item-price">₹99</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">MUSHROOM MASALA MAGGI</div>
+                <div class="menu-item-price">₹129</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">MINI SAMOSA</div>
+                <div class="menu-item-price">₹109</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Vada Pav</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">MUMBAI VADA PAV</div>
+                <div class="menu-item-price">₹69</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">PERI PERI VADA PAV</div>
+                <div class="menu-item-price">₹79</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Pancakes & Pies</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">NUTELLA BANANA PANCAKE</div>
+                <div class="menu-item-price">₹159</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">CLASSIC MAPLE SYRUP PANCAKE</div>
+                <div class="menu-item-price">₹159</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">CHOCOLATE BANANA PANCAKE</div>
+                <div class="menu-item-price">₹159</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">VANILLA PIE WITH NUTELLA</div>
+                <div class="menu-item-price">₹169</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">VANILLA PIE WITH MAPLE SYRUP</div>
+                <div class="menu-item-price">₹139</div>
+            </div>
+        </div>
+
+</body>
+</html>

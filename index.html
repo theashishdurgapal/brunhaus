@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brün Haus - Café & Eatery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="#home">
+            <img src="assets/images/bhlandinglogo.png" alt="Brün Haus Logo">
+        </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#ambience">Ambience</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars">  </i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" >
+        <video autoplay muted loop id="hero-video">
+        <source src="assets/images/hero.mp4" type="video/mp4">
+        <!-- Fallback for browsers that don't support video -->
+        Your browser does not support the video tag.
+    </video>
+        <div class="hero-content">
+            <h1>Welcome to Brün Haus</h1>
+            <p>Where every cup tells a story</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+            <a href="http://zoma.to/r/22232213" class="btn">Order Now!</a>
+        </div>
+    </section>
+
+<!-- About Intro -->
+    <section class="about-intro">
+     <div class="intro-text">
+        <h2>SINCE 2025</h2>
+        <p>What makes <b>Brün Haus</b> your everyday neighborhood space?</p>
+    </div>
+    <br>
+        <div class="intro-icons">
+        <div class="icon-item">
+            <img src="assets/images/coffeeheart.png" alt="Coffee Icon" class="coffee-icon"> 
+            <p>PREMIUM AA QUALITY COFFEE BEANS</p>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-coffee"></i>
+            <p>BUDGET FRIENDLY PRICES</p>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-store"></i>
+            <p>COMMUNITY SPACE</p>
+        </div>
+    </div>
+   
+</section>
+
+    <!-- Our Story -->
+    <section id="story" class="story">
+        <div class="story-content">
+          <b> <center><h1>Our Story</h1></center> </b>
+            <br>
+            <p>Brün Haus was born from a simple idea — to create a space where people slow down, connect, and feel at home.
+What started as a passion for good coffee and warm conversations has grown into a cozy community space for dreamers, creators, and thinkers.</p>
+
+<p>Every cup, every flavor, and every corner of Brün Haus is crafted with care and intention.
+It’s not just a café — it’s where stories begin, friendships brew, and moments turn into memories.
+
+Welcome to Brün Haus — your space to sip, create, and belong.</p>
+          <br>  <img src="assets/images/story.jpeg" alt="Our Story">
+        </div>
+    </section>
+
+    <!-- Ambience -->
+    <section id="ambience" class="ambience">
+       <center><h1>Ambience</h1></center> 
+        <br>
+        <p> Step into Brün Haus — where comfort meets charm.
+With 40 cozy seats, an inviting open area, and the soothing scent of freshly brewed coffee, every corner is designed to make you feel at ease.</p><p>Enjoy good music, lose track of time over board games, or simply unwind in the warm, aromatic air that makes Brün Haus more than just a café — it’s an experience. </p>
+        <div class="gallery">
+            <img src="assets/images/ambience5.jpg" alt="Ambience">
+            <img src="assets/images/ambience2.jpg" alt="Ambience">
+            <img src="assets/images/ambience3.jpg" alt="Ambience">
+            <img src="assets/images/ambience4.jpg" alt="Ambience">
+        </div>
+    </section>
+
+
+    <!-- Our Menu -->
+    <section id="menu" class="menu">
+        <h1>Our Menu</h1>
+        <br>
+        <div class="event-slider">
+                <div class="menu-item" data-target= "foodmenu.html">
+                <img src="assets/images/food.jpg" alt="Food">
+                <h3>Food & Appetizers</h3>
+                <p>Start your day with our signature food platters.</p>
+            </div>
+            <div class="menu-item" data-target= "drinksmenu.html">
+                <img src="assets/images/drinks.jpg" alt="Drinks">
+                <h3>Beverages</h3>
+                <p>From classic espresso to artisanal mocktails, we have it all.</p>
+            </div>
+            <div class="menu-item" data-target= "dessertmenu.html">
+                <img src="assets/images/dessert.jpg" alt="Dessert">
+                <h3>Desserts and Bakery</h3>
+                <p>Indulge in our decadent desserts and pancakes.</p>
+            </div>
+        </div>
+        <!-- Container for dynamically loaded menu content -->
+        <div id="menu-content-container" class="detailed-menu">
+        <div class="menu-close">&times;</div>
+        <div id="detailed-menu-content"></div>
+    </div>
+    </section>
+
+     <!-- Community -->
+    <section id="community" class="community">
+       <center><h1>Community Space</h1></center>  <br>
+        <p>
+    At Brün Haus, we believe a café is more than just coffee — it’s a place where ideas brew, stories unfold, and communities connect. 
+    Our Community Space is designed for everyone — from artists and musicians to book lovers and event enthusiasts.
+  </p>
+  <p>
+    Join us for cozy evenings, open mics, festive gatherings, and exclusive workshops that bring people together.  
+    Check out our latest events below and be a part of the Brün Haus experience!
+  </p>
+        <br>
+        <div class="event-slider">
+                <div class="event-item">
+                <img src="assets/images/event-1.jpg" alt="Food">
+                <h3>Halloween Party</h3>
+                <p>Mask and Dress like the devil</p>
+                <p>31st October, 2025 (7:00 PM)</p>
+                <br>
+                <a href="#menu" class="btn-3">Book Now!</a>
+            </div>
+            <div class="event-item">
+                <img src="assets/images/event-2.jpg" alt="Drinks">
+                <h3>Weekend Open Mic</h3>
+                <p>Sing, Play, Recite, Comedy</p>
+                <p>01st November, 2025 (7:00 PM)</p>
+                <br>
+                <a href="#menu" class="btn-3">Book Now!</a>
+            </div>
+            <div class="event-item">
+                <img src="assets/images/event-3.jpg" alt="Dessert">
+                <h3>Coffee Brewing Workshop</h3>
+                <p>Explore the world of aromas</p>
+                <p>08th November, 2025 (7:00 PM)</p>
+                <br>
+                <a href="#menu" class="btn-3">Book Now!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+<section id="contact" class="contact">
+    <h1>Contact Us / Book an Event</h1>
+    <div class="contact-info">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1778.910947452621!2d80.95509271726246!3d26.909147018511533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999571fedcce517%3A0x6d75c4b70e74d9b8!2sBRUN%20HAUS!5e0!3m2!1sen!2sin!4v1761817157484!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-section">
+
+        </iframe>
+        <br>
+        <p><i class="fas fa-map-marker-alt"></i> M3/57, SBI Colony, Sector G, Jankipuram, Lucknow</p>
+        <p><i class="fas fa-phone"></i> +91 94555-55085</p>
+        <p><i class="fas fa-envelope"></i> hello@brunhaus.in</p>
+    </div>
+    <a href="#menu" class="btn-2">Book an Event</a>
+    <br>
+    <br>
+    <a href="https://g.page/r/CbjZdA63xHVtEBE/review" class="btn-2">Leave a Feedback</a>
+</section>
+
+    <!-- Footer -->
+       <footer class="dark-footer">
+    <div class="footer-content">
+        <div class="footer-section address-section">
+            <h4>Address</h4>
+            <p>M3/57, SBI Colony, Sector G, Jankipuram,<br>Lucknow, 226022</p>
+            <p>10:00 AM – 11:00 PM</p>
+        </div>
+        <div class="footer-section contact-section">
+            <h4>Get in touch</h4>
+            <p>Email: hello@brunhaus.in</p>
+            <p>Phone: +91 94555-55085</p>
+        </div>
+        <div class="footer-section social-section">
+            <h4>Follow us</h4>
+            <div class="social-links">
+                <a href="#" target="https://www.instagram.com/brun.haus/"><i class="fab fa-instagram"></i></a>
+                <a href="http://zoma.to/r/22232213"> <img src="assets/images/zomato.png" alt="Zomato" class="zom-item"> </a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Brün Haus. All rights reserved.</p>
+    </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
