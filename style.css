@@ -267,6 +267,9 @@ font-size: 3.5 rem;
 
 .menu-item h3 {
     margin: 15px 0 10px;
+    text-align: center;
+    display: block;
+    width: 100%;
 }
 
 .menu-item p {
@@ -570,4 +573,5 @@ font-size: 3.5 rem;
     .copyright {
         margin-top: 15px; /* Adjusted margin */
     }
+
 }
